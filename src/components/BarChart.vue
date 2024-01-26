@@ -34,28 +34,14 @@ export default {
     },
     methods: {
         initRequest(){
-            this.axios.get("https://www.google.com/")
+            this.axios.get("/api/postreq")
         .then(response => {
-            this.datas = response.data
-            console.log(response.data);
+            console.log(response);
         })
           .catch(function (error) {
              console.log(error);
         });
         },
-        async initRequest2() {
-            const response = await fetch("/api/postreq", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    "some": "Key",
-                    "and": "Another"
-                })
-            })
-            console.log(response)
-        }
     },
     created() {
         this.initRequest();
