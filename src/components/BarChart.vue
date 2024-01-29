@@ -89,13 +89,13 @@ export default {
     },
     methods: {
         initRequest() {
-/*             this.axios.get("/api/postreq")
+            this.axios.get("/api/postreq")
                 .then(response => {
                     console.log(response);
                 })
                 .catch(function (error) {
                     console.log(error);
-                }); */
+                });
 
             this.optionExample()
         },
@@ -201,7 +201,8 @@ export default {
         }
     },
     mounted() {
-      this.timer = setInterval(() => {
+        //this.timer = setInterval(() => {
+        this.timer = setTimeout(() => {
         this.dataSample.reply.unshift(...this.dataSample.reply.splice(-1));
       }, 100)
    },
