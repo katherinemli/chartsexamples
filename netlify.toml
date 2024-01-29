@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/api/postreq"
-  to = "https://golandbackend-09fdf720d244.herokuapp.com"
+  to = "http://10.11.14.50:3000"
   status = 200
