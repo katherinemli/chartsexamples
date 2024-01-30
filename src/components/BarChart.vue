@@ -91,13 +91,15 @@ export default {
         initRequest() {
             this.axios.get("/api/postreq")
                 .then(response => {
-                    console.log(response);
+                    console.log(response.data.value);
+                    this.dataSample.reply = response.data.value;
+                    this.optionExample()
                 })
                 .catch(function (error) {
                     console.log(error);
                 });
 
-            this.optionExample()
+            
         },
         optionExample() {
 
