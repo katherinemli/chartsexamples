@@ -204,12 +204,12 @@ export default {
     },
     mounted() {
         //this.timer = setInterval(() => {
-        this.timer = setTimeout(() => {
+/*         this.timer = setTimeout(() => {
         this.dataSample.reply.unshift(...this.dataSample.reply.splice(-1));
-      }, 100)
+      }, 100) */
    },
     beforeDestroy() {
-      clearInterval(this.timer)
+      //clearInterval(this.timer)
    }
 }
 </script>
