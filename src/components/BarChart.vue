@@ -6,7 +6,6 @@
   
 <script>
 import { AgChartsVue } from 'ag-charts-vue';
-import dataSample from './data_sample.json';
 
 export default {
     name: 'BarChart',
@@ -20,7 +19,7 @@ export default {
         return {
             totalCountFrames: 0,
             timer: null,
-            dataSample,
+            dataSample: [],
             chLength: 0,
             chAmount: 0,
             colors: {
@@ -92,7 +91,7 @@ export default {
             this.axios.get("/api/postreq")
                 .then(response => {
                     console.log(response.data.value);
-                    this.dataSample.reply = response.data.value;
+                    this.dataSample = response.data.value;
                     this.optionExample()
                 })
                 .catch(function (error) {
@@ -104,10 +103,10 @@ export default {
         optionExample() {
 
             var fillColorstInroute = [];
-            this.dataSample.reply.forEach(element => {
+            this.dataSample.forEach(element => {
                 fillColorstInroute.push(this.colors[element]);
             });
-            this.totalCountFrames = this.dataSample.reply.length;
+            this.totalCountFrames = this.dataSample.length;
             var serieDynamicInroute = [];
 
             for (let index = 0; index < this.totalCountFrames; index++) {
