@@ -5,7 +5,7 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 
 //axios.defaults.baseURL = 'http://localhost:3000';
-axios.defaults.baseURL = 'https://golandbackend-09fdf720d244.herokuapp.com/api'
+axios.defaults.baseURL = 'https://golandbackend-09fdf720d244.herokuapp.com'
 // this part resolve an issue where the markers would not appear
 
 
