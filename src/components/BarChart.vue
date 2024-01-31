@@ -88,7 +88,7 @@ export default {
     },
     methods: {
         initRequest() {
-            this.axios.get("/api/postreq")
+            this.axios.get("/api")
                 .then(response => {
                     console.log(response.data.value);
                     this.dataSample = response.data.value;
