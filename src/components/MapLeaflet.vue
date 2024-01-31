@@ -95,7 +95,7 @@ export default {
       return L.latLng(lat, lng);
     },
     initRequest() {
-      this.axios.get("/api/points")
+      this.axios.get("/points")
         .then(response => {
           console.log(response.data);
           this.markers = response.data;
