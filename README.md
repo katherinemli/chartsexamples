@@ -1,24 +1,22 @@
-# chartsexamples
+# Katherine Liberona
 
-## Project setup
-```
+I am a Bachelor of Computer Science & Engineering at the University of Santiago de Chile (2018) and I have been working for around 3 years on web-based applications both on the front-end and back-end.
+
+[Watch the code working here](https://ornate-shortbread-20015a.netlify.app/).
+
+Have something cool to share? Pop me a message! katherine.lib.ira@gmail.com
+
+## Install the dependencies
+```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+### Start the app in development mode (hot-code reloading, error reporting, etc.)
+```bash
+npm run dev
 ```
 
-### Compiles and minifies for production
-```
+### Build the app for production
+```bash
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
