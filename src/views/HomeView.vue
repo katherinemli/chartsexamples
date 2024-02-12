@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Katherine Liberona, Full Stack Developer"/>
     <BarChart msg="te amo katherine"/>
   </div>
