@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="te amo katherine"/>
+    <HelloWorld msg="Katherine Liberona, Full Stack Developer"/>
     <BarChart msg="te amo katherine"/>
   </div>
 </template>

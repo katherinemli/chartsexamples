@@ -1,6 +1,13 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <p>
+      With an eye for intuitive, well designed and user-friendly websites, I love to build websites that not only look great, but also feel great to use, regardless.
+    </p>
+    <ul>
+      <li><a href="https://github.com/katherinemli" target="_blank" rel="noopener">Github Portfolio</a></li>
+      <li><a href="https://www.linkedin.com/in/katherine-liberona-irarrazabal-76a843150/" target="_blank" rel="noopener">Linkedin Profile</a></li>
+    </ul>
   </div>
 </template>
 
